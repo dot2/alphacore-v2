@@ -1,0 +1,40 @@
+@import "var"
+
+.header-wrapper
+  height: 10vh
+  box-shadow: 0 0 5px $shadow
+  display: flex
+  flex-direction: row
+  align-items: center
+  position: relative
+  background-color: #fff
+
+
+  .logo
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding-left: 1.56em
+
+    img
+      width: 50px
+      margin-right: .9em
+    h1
+      font:
+        family: $font-main
+        size: 2rem
+    strong
+      font-weight: 300
+      font-family: $font-sec
+
+  .nav
+    position: absolute
+    right: 1.56em
+    ul
+      list-style: none
+      display: flex
+      flex-direction: row
+    li
+      list-style: none
+      text-decoration: none
+      padding: 0 1.56em

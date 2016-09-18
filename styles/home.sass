@@ -1,0 +1,63 @@
+@import "var"
+
+.video-wrapper
+  height: 55vh
+  position: relative
+  background: transparentize(#000, 0.8)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  h2
+    color: #fff
+    font:
+      family: $font-main
+      size: 2.5rem
+
+  .btn-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 2.5em
+
+  .btn
+    background-color: $accent
+    border-radius: 2px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: .5em 1.8em
+    transition: all 0.3s ease
+    font:
+      family: $font-sec
+      size: 1.125rem
+      weight: bold
+    &:hover
+      transform: translate(0, -5%)
+      background-color: transparentize($accent, 0.1)
+
+
+  video
+    position: absolute
+    top: -50%
+    z-index: -1
+
+.about-services
+  background-color: #fff
+  padding: 5em 0
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+  .service-item
+    width: 30%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    img
+      width: 100px
+
+    h2
+      margin-top: 2em
