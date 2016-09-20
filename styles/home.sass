@@ -74,25 +74,40 @@
 .project-home
   background-color: #fff
   background: linear-gradient(145deg, #fff, $accent 80%, $accent)
-  padding: 4em 1em
+  height: 100vh
+  position: relative
+  background-image: url('../images/wood-bkg.jpg')
+  background-size: cover
+  background-attachment: fixed
+  overflow: hidden
 
   .projects
     display: flex
     flex-direction: row
     align-items: center
     justify-content: center
-    position: relative
+    flex-wrap: wrap
+    height: 100vh
 
   .project-card
-    height: 519px
-    width: 450px
+    height: 400px
+    width: 30%
+    max-width: 550px
     background-color: #fff
     box-shadow: 0 0 5px $shadow
-    margin: .5em 2em
+    margin: .5em 1em
 
     .project-img
-      height: 400px
+      height: 290px
       background:
         image: url('../images/lecf.png')
         size: cover
         position: top
+
+    h2
+      font:
+        family: $font-main
+        size: 1.25rem
+      color: $light-black
+      margin-top: 15px
+      margin-left: 10px
