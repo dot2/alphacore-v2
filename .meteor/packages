@@ -15,6 +15,7 @@ tracker                 # Meteor's client-side reactive programming library
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 
 
+natestrauser:animate-css
 mizzao:jquery-ui
 bredikhin:contact-form
 kadira:flow-router
