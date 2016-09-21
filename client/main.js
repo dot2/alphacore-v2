@@ -20,3 +20,21 @@ import { ReactiveVar } from 'meteor/reactive-var';
 //     instance.counter.set(instance.counter.get() + 1);
 //   },
 // });
+
+// Template.MainLayout.onRendered = function(){
+//     $(document).ready(function() {
+//         $(window).scroll(function() {
+//             if($(event.target).scrollTop() > 0) {
+//                 $('.top-btn').fadeIn();
+//             } else {
+//                 $('.top-btn').fadeOut();
+//             }
+//         });
+//
+//         $('.top-btn').click(function(){
+//             $('html, body').animate({scrollTop : -100}, 1000);
+//             return false;
+//         });
+//
+//     });
+// }

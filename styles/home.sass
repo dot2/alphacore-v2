@@ -2,6 +2,7 @@
 
 .video-wrapper
   height: 55vh
+  max-height: 500px
   position: relative
   background: transparentize(#000, 0.8)
   display: flex
@@ -74,7 +75,7 @@
 .project-home
   background-color: #fff
   background: linear-gradient(145deg, #fff, $accent 80%, $accent)
-  height: 100vh
+  height: 800px
   position: relative
   background-image: url('../images/wood-bkg.jpg')
   background-size: cover
@@ -87,7 +88,7 @@
     align-items: center
     justify-content: center
     flex-wrap: wrap
-    height: 100vh
+    height: 800px
 
   .project-card
     height: 400px
@@ -95,7 +96,10 @@
     max-width: 550px
     background-color: #fff
     box-shadow: 0 0 5px $shadow
-    margin: .5em 1em
+    margin: 0em 1em
+    opacity: 0
+    transform: translateY(20px)
+    transition: all 0.3s ease-in-out
 
     .project-img
       height: 290px
@@ -111,3 +115,7 @@
       color: $light-black
       margin-top: 15px
       margin-left: 10px
+
+    &.is-showing
+        opacity: 1
+        transform: translateY(0px)
