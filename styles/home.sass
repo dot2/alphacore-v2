@@ -15,6 +15,9 @@
       family: $font-main
       size: 2.5rem
 
+  .bkg-video
+      background-attachment: fixed
+
   .btn-wrapper
     display: flex
     align-items: center
@@ -39,8 +42,8 @@
 
 
   video
-    position: absolute
-    top: -50%
+    position: fixed
+    top: -20%
     z-index: -1
 
 .about-services
@@ -169,5 +172,7 @@
 
 #mc_embed_signup input.email
   border-radius: 30px !important
+  border-color: $light-black !important
+  padding: 0 .8em !important
 #mc_embed_signup input.email:focus
     outline-width: 0
