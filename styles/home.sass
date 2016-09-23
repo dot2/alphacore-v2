@@ -97,16 +97,31 @@
     background-color: #fff
     box-shadow: 0 0 5px $shadow
     margin: 0em 1em
+    position: relative
     opacity: 0
     transform: translateY(20px)
     transition: all 0.3s ease-in-out
+    &:hover
+        box-shadow: 0px 17px 15px -8px $shadow
+
 
     .project-img
+      font: 0/0 a
+      color: transparent
       height: 290px
       background:
-        image: url('../images/lecf.png')
         size: cover
         position: top
+
+    .view-btn
+        position: absolute
+        bottom: .625em
+        right: .625em
+        color: $blue
+        font:
+            size: 1.2rem
+            family: $font-sec
+            weight: 300
 
     h2
       font:
@@ -119,8 +134,38 @@
     &.is-showing
         opacity: 1
         transform: translateY(0px)
-
+    &:hover
+        transform: translate(0, -2%)
 
 .tuts-wrapper
-  height: 400px
+  height: 300px
   background-color: $light-black
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  h2
+      margin-bottom: .5em
+      text-align: center
+      color: #fff
+      font:
+          family: $font-main
+          size: 2rem
+  h3
+      margin-top: .5em
+      text-align: center
+      color: #fff
+      font:
+          family: $font-sec
+          size: 1.2rem
+
+#mc_embed_signup .button
+   background-color: $dark-green !important
+   box-shadow: 0 0 5px $shadow
+   transition: all 0.3s ease
+   &:hover
+       box-shadow: 0px 12px 15px -8px $shadow-dark
+       transform: translate(0, -2%)
+
+#mc_embed_signup input.email:focus
+    outline-width: 0
