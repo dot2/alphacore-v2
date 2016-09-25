@@ -1,5 +1,19 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+// import { Template } from 'meteor/templating';
+// import { ReactiveVar } from 'meteor/reactive-var';
+
+Template.header.events({
+'click #mobile': function(e) {
+    $('#mobile-nav').toggleClass('view');
+}
+});
+
+Template.home.events({
+  'click .video-wrapper': function(e) {
+    $('#mobile-nav').removeClass('view');
+  }
+});
+
+
 
 // import './main.html';
 //
