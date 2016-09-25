@@ -93,3 +93,27 @@
     &:hover
         box-shadow: 0px 17px 15px -8px $shadow-dark
         transform: translate(0, -5%)
+
+@media screen and(max-width: 520px)
+    .contact-img
+        width: 100% !important
+        margin: 1em 0 !important
+        display: flex
+        align-items: center
+        justify-content: center
+    .contact, .info
+        flex-direction: column !important
+        align-items: center
+        justify-content: center
+
+    .contact-info
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+            width: 100% !important
+            font-size: 1.5rem !important
+        h2
+            width: 100% !important
+            font-size: 1.2rem !important
